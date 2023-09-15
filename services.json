@@ -1,0 +1,17 @@
+[
+    {
+        "title": "RV Inspection",
+        "description": "Thorough inspection of your RV to identify issues and provide recommendations.",
+        "price": "$150"
+    },
+    {
+        "title": "RV Repair",
+        "description": "Expert repair services for all RV components and systems.",
+        "price": "Varies"
+    },
+    {
+        "title": "RV Maintenance",
+        "description": "Regular maintenance to keep your RV in top condition.",
+        "price": "$75/hour"
+    }
+]
