@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Mobile RV Tech</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="images/logo.png" alt="My Mobile RV Tech Logo">
+        </div>
+        <div id="menu">
+            <h1>My Mobile RV Tech</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+	
+    <!-- Banner image section -->
+    <div id="banner">
+        <div id="banner-text">
+            <h2>Mobile RV Service</h2>
+            <p>Experienced. Knowledgeable. Quality Service.</p>
+        </div>
+        <img src="images/banner.png" alt="Banner Image">
+    </div>
+    
+        <section id="home">
+        <h2>We Come to You!</h2>
+        <p><strong>Serving These Counties:</strong><br>
+        Fayette - Colorado - Lavaca - Gonzales - Caldwell - Bastrop - Lee - Washington - Austin<br>
+        Other counties by appointment only.</p>
+        <p>I also travel throughout the United States and am mobile for service and repairs.</p>
+    </section>
+
+    <section id="services">
+        <h2>Services</h2>
+        <ul>
+            <li>AC Unit service and new installs</li>
+            <li>Furnaces service and new installs</li>
+            <li>Refrigerators service and new installs</li>
+            <li>Water heaters service and new installs</li>
+            <li>Microwave installs</li>
+            <li>Converters</li>
+            <li>Inverters</li>
+            <li>Generators</li>
+            <li>Awnings</li>
+            <li>Slide out repairs</li>
+            <li>Plumbing</li>
+            <li>Electrical</li>
+            <li>Roofs water intrusions</li>
+            <li>Wheel bearing repair</li>
+            <li>Pre-purchase consultations and much more</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <address>
+            My Mobile RV Tech<br>
+            3389 O’Quinn Branch Rd.<br>
+            La Grange, TX 78945<br>
+            Call or Text: <a href="tel:%2019797025303">979-702-5303</a><br>
+            Website: <a href="http://www.mymobilervtech.com" target="_blank">www.mymobilervtech.com</a><br>
+            Email: <a href="mailto:info@mymobilervtech.com">info@mymobilervtech.com</a>
+        </address>
+    </section>
+</body>
+</html>

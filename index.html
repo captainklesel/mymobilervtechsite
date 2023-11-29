@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>My Mobile RV Tech</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 <body>
     <header>
@@ -32,7 +35,7 @@
         <img src="images/banner.png" alt="Banner Image">
     </div>
     
-        <section id="home">
+    <section id="home">
         <h2>We Come to You!</h2>
         <p><strong>Serving These Counties:</strong><br>
         Fayette - Colorado - Lavaca - Gonzales - Caldwell - Bastrop - Lee - Washington - Austin<br>
@@ -61,6 +64,31 @@
         </ul>
     </section>
 
+    <section id="licenses">
+        <div class="license-carousel">
+            <div id="license-carousel-image-1">
+                <img src="images\adv rv service tech license.png" alt="advanced rv service tech license">
+            </div>
+            <div id="license-carousel-image-2">
+                <img src="images\rv service tech license.png" alt="rv service tech license">
+            </div>
+            <div id="license-carousel-image-3">
+                <img src="images\rv absorption reffrigerators license.png" alt="rv refrigeration license">
+            </div>
+            <div id="license-carousel-image-4">
+                <img src="images\rv air conditioners and heat pumps.png" alt="rv hvac license">
+            </div>
+            <div id="license-carousel-image-5">
+                <img src="images\rv water heaters and furnaces.png" alt="rv water heaters and furnaces">
+            </div>
+            <div id="license-carousel-image-6">
+                <img src="images\rv exterior systems license.png" alt="rv exterior systems license">
+            </div>
+            <div id="license-carousel-image-7">
+                <img src="images\rv fundamentals.png" alt="rv fundamentals">
+            </div>            
+    </section>
+
     <section id="contact">
         <h2>Contact Us</h2>
         <address>
@@ -72,5 +100,49 @@
             Email: <a href="mailto:info@mymobilervtech.com">info@mymobilervtech.com</a>
         </address>
     </section>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.license-carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear',
+                autoplay: true,
+                autoplaySpeed: 2000,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
 </body>
 </html>
