@@ -1,6 +1,6 @@
 import Layout from './components/layout'
 
-export async function getStaaticProps() {
+export async function getStaticProps() {
     return {
         props: {
             title: 'Home Page'
