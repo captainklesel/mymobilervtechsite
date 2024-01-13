@@ -1,7 +1,15 @@
 import Layout from './components/layout'
 
-export default function Page() {
+export async function getStaaticProps() {
+    return {
+        props: {
+            title: 'Home Page'
+        }
+    }
+}
+
+export default function Page({ props }) {
     return (
-    <Layout />
+        <Layout />
     )
 }
