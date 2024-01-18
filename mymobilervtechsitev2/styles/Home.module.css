@@ -1,64 +1,9 @@
-#logo img {
-  max-width: 80px; /* Adjust the size as needed */
-  margin-right: 10px; /* Add some spacing between the logo and menu */
-}
-
-#menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.header {
   width: 100%;
+  background-color: darkgrey;
 }
 
-/* Banner styles */
-#banner {
-  position: relative;
-  text-align: center;
-  margin-top: 20px; /* Add spacing between the banner and home section */
-}
-
-#banner img {
-  max-width: 100%; /* Make sure the image fits within the container */
-}
-
-#banner-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-  padding: 20px;
-  color: #fff;
-}
-
-#banner-text h2 {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-
-#banner-text p {
-  font-size: 18px;
-  margin: 0;
-}
-
-/* Responsive styles for smaller screens */
-@media (max-width: 768px) {
-
-  #logo img {
-      max-width: 100%; /* Ensure the logo scales down for smaller screens */
-      margin-bottom: 10px; /* Add spacing between the logo and menu */
-  }
-
-  /* Adjust banner text for smaller screens */
-  #banner-text {
-      padding: 10px;
-  }
-
-  #banner-text h2 {
-      font-size: 24px;
-  }
-
-  #banner-text p {
-      font-size: 14px;
-  }
+.cards {
+  display: flexbox;
+  flex-wrap: wrap;
 }

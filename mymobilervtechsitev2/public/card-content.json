@@ -1,0 +1,48 @@
+[
+    {
+        "id": "0",
+        "type": "home",
+        "data":{
+            "type": "home",
+            "h1": "We Come to You!",
+            "h2": "Serving These Counties:",
+            "body": "Fayette - Colorado - Lavaca - Gonzales - Caldwell - Bastrop - Lee - Washington - Austin",
+            "body2": "Other counties by appointment only. I also travel throughout the United States and am mobile for service and repairs. Call for details on current service location."
+        }
+    },
+    {
+        "id": "1",
+        "type": "services",
+        "data": {
+            "h1": "Services",
+            "h2": "We offer a wide range of services including:",
+            "body": "- AC Unit service and new installs - Furnaces service and new installs - Refrigerators service and new installs - Water heaters service and new installs - Microwave installs - Converter - Inverters - Generators - Awnings - Slide out repairs - Plumbing - Electrical - Roofs water intrusions - Wheel bearing repair - Pre-purchase consultations and much more",
+            "body2": "I posess a lifetime of experience and knowledge and enjoy sharing it with others while helping with their RV needs. If your service is not listed here, please call and ask. I am sure I can help you with your RV needs."
+        }
+    },
+    {
+        "id": "2",
+        "type": "contact",
+        "data": {
+            "type": "contact",
+            "h1": "Contact Us",
+            "phone": "979-702-5303",
+            "email": "info@mymobilervtec.com",
+            "address": "My Mobile RV Tech 3389 O’Quinn Branch Rd. La Grange, TX 78945",
+            "button": "Call Now!"
+        }
+    },
+    {
+        "id": "3",
+        "type": "about",
+        "data": {
+            "type": "about",
+            "h1": "About Us",
+            "h2": "About Us h2",
+            "body": "About Us body",
+            "body2": "About Us body2",
+            "imagePath": "@/public/next.svg",
+            "imageAlt": "About Us imageAlt"
+        }
+    }
+]
