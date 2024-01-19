@@ -1,6 +1,69 @@
 .card {
-    background-color: #fff;
-    border-radius: 0.25rem;
-    border: 1px solid rgba(0, 0, 0, 0.125);
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    overflow: hidden;
+    background-color: #fcfcfcc2;
+    border: 2px solid rgba(0, 0, 0, 0.514);
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.425);
+    margin: 0.5rem;
+    display: flexbox;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 50vh;
+    min-width: 30vb;
+}
+
+.card:hover {
+    background-color: #f2f2f2;
+    border: 2px solid rgba(0, 0, 0, 0.514);
+    box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.425);
+}
+
+.title {
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.line {
+    min-width: 30%;
+    max-width: 70%;
+    width: auto;
+    justify-content: center;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.767);
+    box-shadow: 0 0.1rem 0.15rem rgba(0, 0, 0, 0.356);
+    margin: 1rem auto 1rem auto;
+}
+
+.subtitle {
+    text-align: center;
+    padding-bottom: .5rem;
+    margin: 1lh 2rem 1lh 2rem;
+}
+
+.body {
+    text-align: center;
+    margin: 1lh 2rem 1lh 2rem;
+}
+
+.body2 {
+    text-align: center;
+    margin: 1lh 2rem 1lh 2rem;
+}
+
+.address {
+    text-align: center;
+    text-decoration: wavy;
+    margin: 1lh 2rem 1lh 2rem;
+}
+
+.email {
+    text-align: center;
+    text-decoration: wavy;
+    margin: 1lh 2rem 1lh 2rem;
+}
+
+.phone {
+    text-align: center;
+    text-decoration: wavy;
+    margin: 1lh 2rem 1lh 2rem;
 }

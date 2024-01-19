@@ -1,10 +1,10 @@
 import styles from '@/styles/Header.module.css'
+import Image from 'next/image'
+import Logo from '@/public/logo-transparent.png'
+import Image1 from '@/public/NRVTA-Logo.jpg'
+import Image2 from '@/public/rvtaa-logo.png'
 
 export default function Header() {
-    // let backgroundImagePath = ''
-    let image1Path = 'https://nrvta.com/wp-content/uploads/2020/11/NRVTA-Logo-600.jpg'
-    let image2Path = '/logo.png'
-    let image3Path = 'https://rvtaa.org/wp-content/uploads/2020/12/rvtaa-logo-sm.png'
 
     return (
         <>
@@ -16,10 +16,30 @@ export default function Header() {
                 <div className={styles.subtitle}>
                     <h2 id={styles.subtitle}>Experienced. Knowledgeable. Quality Service.</h2>
                 </div>
-                <div className={styles.icons}>
-                    <img id={styles.image1} src={image1Path} alt="image1"/>
-                    <img id={styles.image2} src={image2Path} alt="image2" />
-                    <img id={styles.image3} src={image3Path} alt="image3" />
+                <div className={styles.iconsSection}>
+                    <div className={styles.icons}>
+                        <div className={styles.image1}>
+                            <Image 
+                                id={styles.image1} 
+                                src={Image1} 
+                                alt="NRVTA Logo"
+                            />
+                        </div>
+                        <div className={styles.logo}>
+                            <Image 
+                                id={styles.logo} 
+                                src={Logo} 
+                                alt="My Mobile RV Tech Logo"
+                            />
+                        </div>
+                        <div className={styles.image2}>
+                            <Image 
+                                id={styles.image2} 
+                                src={Image2} 
+                                alt="RVTAA Logo" 
+                            />
+                        </div>
+                    </div>
                 </div>
             </div>
         </container>

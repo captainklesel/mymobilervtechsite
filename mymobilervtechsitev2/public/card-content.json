@@ -28,21 +28,8 @@
             "h1": "Contact Us",
             "phone": "979-702-5303",
             "email": "info@mymobilervtec.com",
-            "address": "My Mobile RV Tech 3389 O’Quinn Branch Rd. La Grange, TX 78945",
+            "address": "3389 O’Quinn Branch Rd. La Grange, TX 78945",
             "button": "Call Now!"
-        }
-    },
-    {
-        "id": "3",
-        "type": "about",
-        "data": {
-            "type": "about",
-            "h1": "About Us",
-            "h2": "About Us h2",
-            "body": "About Us body",
-            "body2": "About Us body2",
-            "imagePath": "@/public/next.svg",
-            "imageAlt": "About Us imageAlt"
         }
     }
 ]

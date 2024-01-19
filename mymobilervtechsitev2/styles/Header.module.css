@@ -1,20 +1,17 @@
 .header {
     width: 100%;
     max-height: 50vh;
-    min-height: 30vh;
-    margin: auto auto;
-    justify-content: center;
+    min-height: 25vh;
+    background-color: rgb(68, 67, 67);
     display: flexbox;
+    padding: 1vh;
 }
 
 .title {
     width: 100%;
     max-height: 30vh;
-    min-height: 7vh;
-    margin: auto auto;
-    padding-top: 2vh;
-    justify-content: center;
-    align-items: center;
+    min-height: 2vh;
+    padding-top: 1vh;
 }
 
 #title {
@@ -31,7 +28,7 @@
     margin: auto auto;
     padding-bottom: 0.75vh;
     justify-content: center;
-    align-items: center;
+    align-content: center;
 }
 
 #subtitle {
@@ -41,26 +38,59 @@
     color:rgb(211, 207, 203);
 }
 
-.icons {
-    max-height: 12vh;
-    min-height: 2vh;
-    justify-content: space-evenly;
-    align-items: center;
+.iconsSection {
+    max-height: min(15vh, 10vw);
+    min-height: max(8vh, 5vw);
     display: flex;
-    border: 3px solid rgb(211, 207, 203);
+}
+
+.icons {
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    margin-trim: all;
+}
+
+.image1 {
+    margin-left: 1vw;
+    display: flex;
+}
+
+.logo {
+    margin-left: 2vw;
+    margin-right: 2vw;
+    display: flex;
+}
+
+.image2 {
+    margin-right: 1vw;
+    display: flex;
+}
+
+#logo {
+    margin: auto auto;
+    width: auto;
+    height: 100%;
 }
 
 #image1 {
-    width: max(3vw, 3vh);
-    height: max(3vw, 3vh);
+    width: auto;
+    height: 40%;
+    margin: auto auto;
+    
 }
 
 #image2 {
-    width: max(3vw, 3vh);
-    height: max(3vw, 3vh);
+    width: auto;
+    height: 40%;
+    margin: auto auto;
 }
 
-#image3 {
-    width: max(3vw, 3vh);
-    height: max(3vw, 3vh);
+@media (max-width: 299px) {
+    
+    .icons {
+        display: none;
+    }
+
 }

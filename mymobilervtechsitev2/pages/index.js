@@ -12,6 +12,7 @@ export default function HomePage() {
       <Head>
         <title>test</title>
         <meta name="description" content="test" />
+        <meta lang='en-us' charSet='utf-8' />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -25,13 +26,13 @@ export default function HomePage() {
           {renderCards()}
         </div>
 
-        <Footer />
       </main>
     </>
   )
 }
 
 function renderCards() {
+  let count = 0
   return Content.map((card) => {
     return (
       <Card key={card.id} type={card.type} data={card.data} />
