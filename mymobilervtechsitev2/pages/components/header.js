@@ -1,7 +1,7 @@
 import styles from '@/styles/Header.module.css'
 import Image from 'next/image'
 import Logo from '@/public/logo-transparent.png'
-import Image1 from '@/public/NRVTA-Logo.jpg'
+import Image1 from '@/public/NRVTA-Logo.png'
 import Image2 from '@/public/rvtaa-logo.png'
 
 export default function Header() {
