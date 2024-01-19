@@ -18,6 +18,7 @@ export default function HomePage() {
       </Head>
 
       <main>
+
         <div className={styles.header}>
           <Header />
         </div>
@@ -35,7 +36,7 @@ function renderCards() {
   let count = 0
   return Content.map((card) => {
     return (
-      <Card key={card.id} type={card.type} data={card.data} />
+      <Card style={{height: "100%"}} key={card.id} type={card.type} data={card.data} />
     )
   })
 }

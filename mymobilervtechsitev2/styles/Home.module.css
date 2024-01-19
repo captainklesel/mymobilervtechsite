@@ -2,8 +2,19 @@
   width: 100%;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.425);
   border-bottom: 2px solid rgba(0, 0, 0, 0.788);
+  max-height: 50vh;
 }
 
 .cards {
-  display: flex;
+  width: 100%;
+  padding: 0.25rem;
+  margin-top: 0.25rem;
+  column-count: 3;
+}
+
+@media (max-width: 1024px) {
+  .cards {
+    column-count: 1;
+    column-width: 95vw;
+  }
 }
