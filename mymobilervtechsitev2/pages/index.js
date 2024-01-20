@@ -1,11 +1,12 @@
 import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import Header from '@/pages/components/header.js'
+import Marquee from '@/pages/components/marquee.js'
 import Footer from '@/pages/components/footer.js'
 import Card from '@/pages/interfaces/card.js'
 import Content from '@/public/card-content.json'
 
-export default function HomePage() {
+export default function Home() {
 
   return (
     <>
@@ -21,6 +22,10 @@ export default function HomePage() {
 
         <div className={styles.header}>
           <Header />
+        </div>
+
+        <div className={styles.marquee}>
+          <Marquee />
         </div>
 
         <div className={styles.cards}>
