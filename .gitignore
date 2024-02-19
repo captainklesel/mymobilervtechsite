@@ -1,0 +1,6 @@
+# dependencies
+/mymobilervtechsitev2/node_modules
+
+# next.js
+/mymobilervtechsitev2/.next
+/mymobilervtechsitev2/out
