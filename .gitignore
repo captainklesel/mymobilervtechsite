@@ -1,6 +1,13 @@
 # dependencies
 /mymobilervtechsitev2/node_modules
+/node_modules
 
 # next.js
 /mymobilervtechsitev2/.next
+/.next
 /mymobilervtechsitev2/out
+/out
+
+# secrets for render
+/mymobilervtechsitev2/etc/secrets
+/etc/secrets
