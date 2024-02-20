@@ -3,7 +3,7 @@ export async function loadCards() {
   const fields = ['title', 'subtitle', 'body1', 'body2'].join(',');
   const queryParams = new URLSearchParams({
     where: '(Id,lt,4)',
-    fields: fields, // Assuming you want to dynamically specify fields
+    fields: fields,
   });
 
   // Append queryParams to the base URL
@@ -13,7 +13,7 @@ export async function loadCards() {
     method: 'GET',
     headers: {
       'xc-auth': process.env.DB_AUTH_TOKEN
-    },
+    }
   };
 
   try {

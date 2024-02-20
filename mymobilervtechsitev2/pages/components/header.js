@@ -4,17 +4,17 @@ import Logo from '@/public/logo-transparent.png'
 import Image1 from '@/public/NRVTA-Logo.png'
 import Image2 from '@/public/rvtaa-logo.png'
 
-export default function Header() {
+export default function Header({ title, subtitle }) {
 
     return (
         <>
         <container>
             <div className={styles.header}>
                 <div className={styles.title}>
-                    <h1 id={styles.title}>My Mobile RV Tech</h1>
+                    <h1 id={styles.title}>{title}</h1>
                 </div>
                 <div className={styles.subtitle}>
-                    <h2 id={styles.subtitle}>Experienced. Knowledgeable. Quality Service.</h2>
+                    <h2 id={styles.subtitle}>{subtitle}</h2>
                 </div>
                 <div className={styles.iconsSection}>
                     <div className={styles.icons}>

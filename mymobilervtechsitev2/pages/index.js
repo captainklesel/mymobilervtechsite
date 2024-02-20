@@ -5,17 +5,23 @@ import Marquee from '@/pages/components/marquee.js'
 import Footer from '@/pages/components/footer.js'
 import Card from '@/pages/components/card.js'
 import { loadCards } from '@/lib/loadCards.js'
+import { loadHeaders } from '@/lib/loadHeaders.js'
 
 export async function getStaticProps() {
   const cards = await loadCards()
-  return { props: { cards } }
+  const headers = await loadHeaders()
+  return { props: { cards, headers } }
 }
 
-export default function Home({ cards }) {
+export default function Home({ cards, headers }) {
   if(!cards) {
     cards = [{title: 'Loading...', subtitle: 'Loading...', body1: 'Loading...', body2: 'Loading...'}, {title: 'Loading...', subtitle: 'Loading...', body1: 'Loading...', body2: 'Loading...'}, {title: 'Loading...', subtitle: 'Loading...', body1: 'Loading...', body2: 'Loading...'}]
   }
+  if(!headers) {
+    headers = [{title: 'Loading...', subtitle: 'Loading...', image1: 'Loading...', image1link: 'Loading...', image2: 'Loading...', image2link: 'Loading...', logoimage: 'Loading...', logolink: 'Loading...'}]
+  }
   cards = cards.list
+  headers = headers.list
 
   return (
     <>
@@ -30,7 +36,7 @@ export default function Home({ cards }) {
       <main>
 
         <div className={styles.header}>
-          <Header />
+          <Header title={headers[0].title} subtitle={headers[0].subtitle}/>
         </div>
 
         <div className={styles.marquee}>
