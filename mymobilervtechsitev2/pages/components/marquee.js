@@ -11,7 +11,7 @@ export default function Marquee() {
             <p className={styles.marqueeLabel}><strong>What our customers say: </strong></p>
             <div className={styles.marqueeBorder}>
                 <div className={styles.marqueeOne}>{renderReviews()}</div>
-                <div classname={styles.marqueeTwo}>{renderReviews()}</div>
+                <div className={styles.marqueeTwo}>{renderReviews()}</div>
             </div>
         </div>  
         </>

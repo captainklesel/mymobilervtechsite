@@ -3,10 +3,19 @@ import styles from '@/styles/Home.module.css'
 import Header from '@/pages/components/header.js'
 import Marquee from '@/pages/components/marquee.js'
 import Footer from '@/pages/components/footer.js'
-import Card from '@/pages/interfaces/card.js'
-import Content from '@/public/card-content.json'
+import Card from '@/pages/components/card.js'
+import { loadCards } from '@/lib/loadCards.js'
 
-export default function Home() {
+export async function getStaticProps() {
+  const cards = await loadCards()
+  return { props: { cards } }
+}
+
+export default function Home({ cards }) {
+  if(!cards) {
+    cards = [{title: 'Loading...', subtitle: 'Loading...', body1: 'Loading...', body2: 'Loading...'}, {title: 'Loading...', subtitle: 'Loading...', body1: 'Loading...', body2: 'Loading...'}, {title: 'Loading...', subtitle: 'Loading...', body1: 'Loading...', body2: 'Loading...'}]
+  }
+  cards = cards.list
 
   return (
     <>
@@ -29,19 +38,11 @@ export default function Home() {
         </div>
 
         <div className={styles.cards}>
-          {renderCards()}
+          <Card title={cards[0].title} subtitle={cards[0].subtitle} body1={cards[0].body1} body2={cards[0].body2} />
+          <Card title={cards[1].title} subtitle={cards[1].subtitle} body1={cards[1].body1} body2={cards[1].body2} />
+          <Card title={cards[2].title} subtitle={cards[2].subtitle} body1={cards[2].body1} body2={cards[2].body2} />
         </div>
-
       </main>
     </>
   )
-}
-
-function renderCards() {
-  let count = 0
-  return Content.map((card) => {
-    return (
-      <Card style={{height: "100%"}} key={card.id} type={card.type} data={card.data} />
-    )
-  })
 }
