@@ -1,0 +1,45 @@
+[
+    {
+        "id": 0,
+        "name":"Ethan Martinez",
+        "body": "High quality people, higher quality service. Best RV tech in Texas!",
+        "rating": 5
+    },
+    {
+        "id": 1,
+        "name":"Steven",
+        "body": "Great help over the phone",
+        "rating": 5
+    },
+    
+    {
+        "id": 2,
+        "name":"Melissa Trevino",
+        "body": "Thank god for people like him. He solved my problem with 15 mins.",
+        "rating": 5
+    },
+    {
+        "id": 3,
+        "name":"Amabely Pena",
+        "body": "Really Nice Person. He knows what he's doing and his prices are really reasonable.",
+        "rating": 5
+    },
+    {
+        "id": 4,
+        "name": "Stephen Klotz",
+        "body": "Donnie provided us with outstanding emergency RV repair service. He was very professional, competent, pleasant and immensely helpful to us. I'd recommend him very highly.",
+        "rating": 5
+    },
+    {
+        "id": 5,
+        "name": "Hollie Hire",
+        "body": "Donnie won’t fix it if it doesn’t need fixin’... I will always be grateful for his support. You will not find anyone better.",
+        "rating": 5
+    },
+    {
+        "id": 6,
+        "name":"Dave Metting",
+        "body": "First, finding a RV tech is not easy especially one who will do the work onsite. ...After we completed a walk thru, Donnie gave me an itemized estimate on each item so I could decide what I wanted to repair and knew the cost up front. Donnie does great work and answered all my questions along the way...",
+        "rating": 5
+    }
+]
